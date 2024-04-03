@@ -115,7 +115,7 @@ class Call(StreamingConversation[TelephonyOutputDeviceType]):
 
     async def retrieve_collected_information(self, conversation_id: str):
         # Connect to the SQLite database
-        conn = sqlite3.connect('collected_information.db')
+        conn = sqlite3.connect('../database/collected_information.db')
         cursor = conn.cursor()
 
         # Retrieve collected information for the given conversation ID

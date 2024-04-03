@@ -15,7 +15,7 @@ from vocode.streaming.telephony.config_manager.base_config_manager import (
 
 from vocode.streaming.telephony.conversation.call import Call
 # from vocode.streaming.telephony.conversation.twilio_call import TwilioCall
-from twilio_call import TwilioCall
+from call.twilio_call import TwilioCall
 from vocode.streaming.telephony.conversation.vonage_call import VonageCall
 from vocode.streaming.transcriber.factory import TranscriberFactory
 from vocode.streaming.utils.base_router import BaseRouter

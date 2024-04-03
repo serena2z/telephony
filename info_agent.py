@@ -113,7 +113,7 @@ class InformationCollectorAgent(RespondAgent[InformationCollectorAgentConfig]):
     
     async def write_to_database(self, conversation_id: str):
         # Connect to the database (or create it if it doesn't exist)
-        conn = sqlite3.connect('collected_information.db')
+        conn = sqlite3.connect('./database/collected_information.db')
         cursor = conn.cursor()
 
         # Create a table if it doesn't exist
